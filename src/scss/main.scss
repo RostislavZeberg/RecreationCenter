@@ -1,0 +1,486 @@
+@import "./fonts.scss";
+@import "./variables.scss";
+
+.wrapper {
+  position: relative;
+  padding: 60px 15px 60px;
+  width: 100%;
+  height: 100%;
+  background-color: #68809f;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+.stop-scroll {
+  overflow: hidden;
+}
+
+.social {
+  &__block {
+    justify-content: space-between;
+    margin-bottom: -10px;
+
+    .tel {
+      margin-bottom: 10px;
+      padding: 6px 7px 3px;
+      border-radius: 20px;
+      display: block;
+      font-family: Montserrat;
+      font-size: 16px;
+      transition: box-shadow 0.3s ease-in-out;
+    }
+  }
+
+  a {
+    display: block;
+    width: fit-content;
+    height: 48px;
+  }
+}
+
+.vk,
+.ok,
+.tg {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.vk,
+.ok {
+  border-radius: 10px;
+}
+
+.tg {
+  border-radius: 50px;
+}
+
+.arrow {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  height: fit-content;
+
+  &__item {
+    width: 35px;
+    height: 235px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  &__item:hover path,
+  &__item:active path {
+    fill: #3c2885;
+  }
+
+  &__svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .s-button-prev {
+    transform: rotate(360deg);
+  }
+
+  .s-button-next {
+    transform: rotate(180deg);
+  }
+}
+
+.header {
+  padding: 15px;
+  background-color: rgb(11, 97, 97);
+
+  &__container {
+    justify-content: space-between;
+  }
+
+  .logo {
+    padding: 20px 20px 15px;
+    width: fit-content;
+    align-items: center;
+    border-radius: 35px;
+
+    &__title {
+      text-align: end;
+      width: 200px;
+      font-family: Bergamasco;
+      font-size: 28px;
+      font-weight: 700;
+    }
+  }
+
+  .nav {
+    &__list {
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      padding: 10px;
+      position: relative;
+      cursor: pointer;
+      text-transform: uppercase;
+
+      h3 {
+        z-index: 1;
+        position: relative;
+      }
+    }
+
+    &__item::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 150px 20px;
+      background: radial-gradient(at center, #fff -50%, rgb(11, 97, 97));
+
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    &__item:hover:before,
+    &__item:focus:before {
+      opacity: 1;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    &__item:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    &__link {
+      position: relative;
+      z-index: 1;
+    }
+
+    .select {
+      position: absolute;
+      top: 40px;
+      left: 0;
+      padding-top: var(--mb-p-select);
+      padding-bottom: var(--mb-p-select);
+      width: 210px;
+      z-index: 3;
+      border-radius: 0 0 20px 20px;
+      text-align: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease-in-out;
+
+      &__item {
+        padding: 5px;
+        display: block;
+      }
+
+      &__item:hover {
+        background-color: #778da9;
+      }
+
+      &__item:not(:last-child) {
+        margin-bottom: var(--mb-p-select);
+        display: block;
+      }
+    }
+
+    .nav__select--active {
+      opacity: 1;
+      z-index: 5;
+      visibility: visible;
+      transition: opacity 0.3s ease-in-out;
+    }
+  }
+
+  .social {
+    justify-content: space-between;
+    width: 184px;
+    margin: 0 auto;
+  }
+
+  &__tel {
+    display: block;
+    margin-bottom: 10px;
+    width: fit-content;
+    border-radius: 10px;
+  }
+}
+
+.hero {
+  margin-bottom: 100px;
+
+  .hero__container {
+    position: relative;
+  }
+
+  .slider {
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    z-index: 1;
+    overflow: hidden;
+
+    .slider__container {
+      width: 100%;
+      height: 100%;
+
+      .slide {
+        position: relative;
+        height: 100%;
+
+        &__img {
+          width: 1270px;
+          height: 725px;
+          object-fit: cover;
+        }
+
+        &__title {
+          margin-bottom: var(--mb-block);
+        }
+
+        &__content {
+          position: absolute;
+          top: 0;
+          right: 8px;
+          padding: 20px;
+          width: 20vw;
+          min-width: 500px;
+          top: 30px;
+          font-size: 20px;
+          background-color: #778da9;
+          box-shadow: 1px 1px 6px 3px #fff;
+        }
+
+        &__btn {
+          position: absolute;
+          left: 30px;
+          bottom: 30px;
+          padding: 20px 40px;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+
+  .swiper-pagination {
+    bottom: -30px;
+  }
+
+  .swiper-pagination-bullet {
+    margin-left: 25px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(207, 207, 108);
+  }
+}
+
+.offers {
+  margin-bottom: var(--mb-section);
+
+  &__list {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: var(--mb-section);
+
+    .item {
+      position: relative;
+      border-radius: 120px;
+
+      &__img {
+        width: 400px;
+        height: 400px;
+        border-radius: 20px;
+      }
+
+      &__title {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: var(--font-size-p);
+      }
+    }
+
+    .item--active {    
+      position: absolute;
+      top: auto;
+      left: auto;
+      right: auto;
+      bottom: auto;  
+      transform: scale(2);
+      z-index: 10;
+    }
+  }
+  &__desc {
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: var(--font-size-p);
+  }
+}
+
+.route {
+  &__title {
+    text-align: center;
+  }
+
+  .slogan {
+    justify-content: center;
+    text-align: center;
+
+    &__img {
+      width: 100%;
+      height: 400px;
+    }
+
+    &__item {
+      position: relative;
+    }
+
+    &__desc {
+      position: absolute;
+      font-family: Bergamasco;
+      font-size: 60px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    &__top {
+      top: 50px;
+      left: 35px;
+      z-index: 2;
+    }
+
+    &__center {
+      top: 50%;
+      bottom: 50%;
+      right: 50%;
+      left: 50%;
+    }
+
+    &__bottom {
+      bottom: 50px;
+      right: 50px;
+    }
+  }
+}
+
+.footer {
+  padding: 15px;
+  background-color: rgb(11, 97, 97);
+
+  &__container {
+    flex-direction: column;
+  }
+
+  &__top {
+    justify-content: space-around;
+    margin-bottom: 30px;
+
+    .logo {
+      border-radius: 43px;
+      width: fit-content;
+      height: fit-content;
+    }
+
+    .contact {
+      gap: 110px;
+
+      .fs-top {
+        font-size: var(--footer-fs-top);
+      }
+
+      .tel,
+      .mail {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .tel {
+        align-items: start;
+
+        &__title {
+          margin-right: 10px;
+          align-items: center;
+
+          svg {
+            margin-right: 10px;
+          }
+        }
+
+        &__number {
+          flex-direction: column;
+        }
+      }
+
+      .tel a:not(:last-child) {
+        margin-bottom: 5px;
+      }
+
+      .mail {
+        align-items: start;
+        font-size: 18px;
+
+        &__title {
+          margin-right: 10px;
+          align-items: center;
+
+          svg {
+            margin-right: 10px;
+          }
+        }
+
+        &__name {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+
+  .social {
+    &__item:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  &__bottom {
+    justify-content: space-between;
+  }
+
+  &__dscr {
+    text-align: center;
+    font-size: var(--footer-fs-bot);
+  }
+
+  &__dscr:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+@import "./cottages.scss";
+@import "./cottage.scss";
+@import "./bathhouse.scss";
+@import "./bicycle.scss";
+@import "./booking.scss";
+@import "./catamaran.scss";
+@import "./contacts.scss";
+@import "./entertainment.scss";
+@import "./farm.scss";
+@import "./fishing.scss";
+@import "./promotions.scss";
+@import "./reviews.scss";
+@import "./media.scss";

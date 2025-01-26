@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.flex {
+  display: flex;
+}
+
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  margin: 0;
+  font-family: Bergamasco, Montserrat, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #000;
+}
+
+:root {
+  --mb-main: 60px;
+  --mb-section: 40px;
+  --mb-block: 20px;
+  --mb-p-select: 20px;
+  --footer-fs-top: 24px;
+  --footer-fs-bot: 20px;
+  --font-size-p-title: 34px;
+  --font-size-p: 30px;
+}
+
+.logo-bg {
+  background: radial-gradient(at center, #fff -50%, rgb(11, 97, 97));
+}
+
+.title-bg {
+  margin: 0 auto;
+  background: radial-gradient(at center, #fff -50%, transparent);
+}
+
+.title-h1 {
+  margin: 0 auto;
+  background: radial-gradient(at center, #fff -50%, transparent);
+  margin-bottom: var(--mb-section);
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-family: Bergamasco;
+  font-weight: 700;
+  font-size: 54px;
+}
+
+.title-h2 {
+  margin: 0 auto;
+  background: radial-gradient(at center, #fff -50%, transparent);
+  margin-bottom: var(--mb-section);
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-family: Bergamasco;
+  font-weight: 700;
+  font-size: 46px;
+}
+
+.btn {
+  background: radial-gradient(at center, #fff -50%, rgb(11, 97, 97));
+  display: table;
+  padding: 20px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  border-radius: 20px;
+  font-size: var(--font-size-p);
+  font-weight: 600;
+}
+
+.logo__img {
+  width: 60px;
+  height: 60px;
+  z-index: 2;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../assest/img/logo.png);
+}
+
+.icon-hover {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.icon-hover:focus,
+.icon-hover:hover {
+  box-shadow: 1px 3px 15px 0px rgba(247, 244, 77, 0.966);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.icon-hover:active {
+  box-shadow: inset 1px 3px 15px 0px rgba(22, 22, 21, 0.966);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.contact-hover {
+  cursor: pointer;
+  color: #80a066;
+  transition: color 0.3s ease-in-out;
+}
+
+.contact-hover:focus,
+.contact-hover:hover {
+  color: #fff;
+  transition: color 0.3s ease-in-out;
+}
+
+.contact-hover:active {
+  color: rgb(214, 83, 83);
+  transition: color 0.3s ease-in-out;
+}/*# sourceMappingURL=variables.css.map */

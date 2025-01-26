@@ -1,0 +1,53 @@
+.reviews {
+  margin-bottom: var(--mb-main);
+
+  &__content {
+    padding: 20px 20px 40px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background: rgb(119, 141, 169);
+    max-width: 1760px;
+    text-align: center;
+
+    .desc {
+      margin-bottom: var(--mb-section);
+
+      &__title {
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        font-size: var(--font-size-p-title);
+        font-weight: 600;
+      }
+
+      &__content {
+        font-size: var(--font-size-p);
+      }
+    }
+  }
+
+  .elfsight-app-51a627a9-114c-456e-a650-59c041fd49a1 {
+    margin-bottom: var(--mb-section);
+  }
+
+  .ButtonBase__Ellipsis-sc-p43e7i-5 {
+    font-size: var(--font-size-p) !important;
+  }
+}
+
+.reviews-btn {
+  margin: 0 auto;
+  background: #0b6161;
+  font-size: var(--font-size-p);
+}
+
+.mb {
+  margin-bottom: var(--mb-section);
+}
+
+.reviews-title {
+  background: rgb(119, 141, 169);
+}
+
+.op {
+  opacity: 0.5;
+}

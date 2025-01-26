@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+
+    <link rel="icon" href="./assest/img/favicon.ico" type="image/x-icon">
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script defer src="./js/main.js"></script>
+
+    <title>Лукоморье | Бронирование</title>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__container container flex">
+            <a href="index.html" class="logo logo-bg icon-hover flex">
+                <div class="logo__img"></div>
+                <h2 class="logo__title">База отдыха Лукоморье</h2>
+            </a>
+            <nav class="nav flex">
+                <button class="burger btn-reset" aria-label="Меню навигации">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                </button>
+                <ul class="nav__list flex list-reset">
+                    <li id="cottage" class="nav__select nav__item" tabindex="0">
+                        <h3>Размещение</h3>
+                        <div class="cottage cottage-select logo-bg select list-reset">
+                            <a href="cottages.html" class="nav__link select__item">Коттеджи</a>
+                            <a href="bathhouse.html" class="nav__link select__item">Баня</a>
+                            <a href="open_air.html" class="nav__link select__item">Open air</a>
+                        </div>
+
+                    </li>
+                    <li id="relax" class="nav__select nav__item" tabindex="0">
+                        <h3>Отдых</h3>
+                        <div class="relax relax-select select logo-bg list-reset">
+                            <a href="fishing.html" class="nav__link select__item">Рыбалка</a>
+                            <a href="catamaran.html" class="nav__link select__item">Катамараны</a>
+                            <a href="bicycle.html" class="nav__link select__item">Велосипеды</a>
+                            <a href="entertainment.html" class="nav__link select__item">Развлечения</a>
+                            <a href="farm.html" class="nav__link select__item">Маленькая ферма</a>
+                        </div>
+                    </li>
+                    <li class="nav__item" tabindex="0">
+                        <a class="nav__link" href="contacts.html" tabindex="-1">Контакты</a>
+                    </li>
+                    <li class="nav__item" tabindex="0">
+                        <a class="nav__link" href="booking.html" tabindex="-1">Бронирование</a>
+                    </li>
+                    <li class="nav__item" tabindex="0">
+                        <a class="nav__link" href="reviews.html" tabindex="-1">Отзывы</a>
+                    </li>
+                    <li class="nav__item" tabindex="0">
+                        <a class="nav__link" href="promotions.html" tabindex="-1">Акции</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="logo logo-bg logo-right">
+                <a href="tel:+74832366000" class="nav__tel tel icon-hover">+7(4832) 366-000</a>
+                <ul class="social flex list-reset">
+                    <li class="social__item">
+                        <a href="#" class="icon-hover vk">
+                            <img src="./assest/img/icon-vk.svg" alt="логотип социальной сети в контакте">
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="icon-hover tg">
+                            <img src="./assest/img/icon-tg.svg" alt="логотип социальной сети телеграмм">
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="icon-hover ok">
+                            <img src="./assest/img/icon-ok.svg" alt="логотип социальной сети однокласники">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrapper">
+
+            <section class="booking">
+                <h1 class="booking__title title-h1">
+                    Бронирование
+                </h1>
+                <div class="booking__content logo-bg">
+                    <p class="booking__desc">
+                        С помощью приведенной ниже формы вы можете забронировать наши номера в режиме онлайн и <br>
+                        <strong>получить гарантированную бронь</strong>.
+                    </p>
+                </div>
+
+
+            </section>
+
+            <section class="route">
+                <div class="route__container container">
+                    <h2 class="route__title title-h2 anime">
+                        Для Вас всё готово! Мы ждём!
+                    </h2>
+                    <a href="https://yandex.ru/maps/?rtext=~53.254749, 33.705743" target="_blank"
+                        class="btn  icon-hover uk-button uk-button-primary anime">ПОСТРОЙТЕ МАРШРУТ</a>
+                    <div class="route__slogan slogan flex">
+                        <div class="slogan__item">
+                            <img src="./assest/img/route-1.webp" alt="" class="slogan__img anime-block">
+                            <span class="slogan__desc slogan__top anime">
+                                УЕДЕНИТЕСЬ
+                            </span>
+                        </div>
+                        <div class="slogan__item">
+                            <img src="./assest/img/route-2.webp" alt="" class="slogan__img anime-block">
+                            <span class="slogan__desc slogan__center anime">
+                                С
+                            </span>
+                        </div>
+                        <div class="slogan__item">
+                            <img src="./assest/img/route-3.webp" alt="" class="slogan__img anime-block">
+                            <span class="slogan__desc slogan__bottom anime">
+                                ПРИРОДОЙ
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container flex">
+            <div class="footer__top flex">
+                <a href="/../" class="logo icon-hover">
+                    <div class="logo__img"></div>
+                </a>
+                <ul class="footer__contact contact flex list-reset">
+                    <li class="contact__item tel flex">
+                        <div class="tel__title flex">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M22.375 15.6808L16.0071 14.9437L12.9621 17.9888C9.5425 16.2487 6.73917 13.4575 4.99917 10.0258L8.05625 6.96875L7.31917 0.625H0.661254C-0.039579 12.9258 10.0742 23.0396 22.375 22.3387V15.6808Z"
+                                    fill="#1C1C1C" />
+                            </svg>
+                            <span class="fs-top">Телефоны:</span>
+                        </div>
+                        <div class="tel__number flex">
+                            <a class="contact-hover fs-top" href="tel:+74832366000">+7 (4832) 366-000</a>
+                            <a class="contact-hover fs-top" href="tel:+74832421121">+7 (4832) 421-121</a>
+                        </div>
+                    </li>
+                    <li class="contact__item mail flex">
+                        <div class="mail__title flex">
+                            <svg width="29" height="29" viewBox="0 0 29 29" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_32_116)">
+                                    <path
+                                        d="M24.1666 4.83325H4.83329C3.50413 4.83325 2.41663 5.92075 2.41663 7.24992V21.7499C2.41663 23.0791 3.50413 24.1666 4.83329 24.1666H24.1666C25.4958 24.1666 26.5833 23.0791 26.5833 21.7499V7.24992C26.5833 5.92075 25.4958 4.83325 24.1666 4.83325ZM23.6833 9.96867L15.7808 14.9108C14.9954 15.4062 14.0045 15.4062 13.2191 14.9108L5.31663 9.96867C5.01454 9.77533 4.83329 9.44909 4.83329 9.09867C4.83329 8.28909 5.71538 7.80575 6.40413 8.22867L14.5 13.2916L22.5958 8.22867C23.2845 7.80575 24.1666 8.28909 24.1666 9.09867C24.1666 9.44909 23.9854 9.77533 23.6833 9.96867Z"
+                                        fill="#1C1C1C" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_32_116">
+                                        <rect width="29" height="29" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <span class="fs-top">E-mail:</span>
+                        </div>
+                        <div class="mail__name flex">
+                            <a class="contact-hover fs-top" href="mailto:xxxxxx@xx.ru">xxxxxx@xx.ru</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="footer__social social flex list-reset">
+                    <li class="social__item">
+                        <a href="#" class="icon-hover vk">
+                            <img src="./assest/img/icon-vk.svg" alt="логотип социальной сети в контакте">
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="icon-hover tg">
+                            <img src="./assest/img/icon-tg.svg" alt="логотип социальной сети телеграмм">
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="icon-hover ok">
+                            <img src="./assest/img/icon-ok.svg" alt="логотип социальной сети однокласники">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__bottom flex">
+                <p class="footer__dscr">
+                    2016-2023 © База отдыха "Лукоморье"
+                </p>
+                <a class="footer__dscr contact-hover" href="/">
+                    Соглашение об использовании сайта
+                </a>
+                <a class="footer__dscr contact-hover" href="/">
+                    Пользовательское соглашение
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+.booking {
+  margin-bottom: var(--mb-main);
+  
+  &__content {
+    padding: 20px 20px 40px;
+    margin: 0 auto;
+    border-radius: 20px;
+    max-width: 1760px;
+    text-align: center;
+  }
+
+  &__desc {
+    font-size: var(--font-size-p);
+    line-height: 55px;
+
+    strong {
+      font-size: var(--font-size-p);
+      text-transform: uppercase;
+    }
+  }
+}

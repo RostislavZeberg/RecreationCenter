@@ -1,0 +1,138 @@
+.slider-all-block {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: var(--mb-main);
+
+  .slider {
+    margin-bottom: var(--mb-section);
+  }
+
+  &__content {
+    padding: 40px 40px 40px;
+    max-width: 1390px;
+    border-radius: 50px;
+  }
+  &__subtitle {
+    margin-bottom: 20px;
+    font-family: Bergamasco;
+    font-size: var(--font-size-p-title);
+    font-weight: 600;
+  }
+
+  &__desc {
+    font-size: var(--font-size-p);
+
+    strong {
+      font-size: var(--font-size-p-title);
+    }
+  }
+
+  &__desc::first-letter {
+    font-size: 130%;
+    font-weight: 600;
+  }
+
+  &__desc:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.slider-all {
+  position: relative;
+  margin: 0 auto;
+  height: 700px;
+  width: 94%;
+  overflow: hidden;
+
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.slider-mb {
+  margin-bottom: var(--mb-section);
+}
+
+.image-mini-slider {
+  overflow: hidden;
+  margin: 0 auto;
+  width: 95%;
+  height: 100px;
+
+  &__block {
+    justify-content: center;
+  }
+
+  &__slide {
+    width: 130px !important;
+    opacity: 1;
+    transition: opacity 0.3s ease 0s;
+  }
+  &__slide:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &__image {
+    position: relative;
+    // padding: 0 0 30% 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+
+    img {
+      object-fit: cover;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      border-radius: 10px;
+    }
+  }
+
+  &__slide.swiper-slide-thumb-active {
+    opacity: 0.4;
+  }
+}
+
+.slider-control {
+  position: absolute;
+  top: 140px;
+  right: 0;
+  left: 0;
+  height: 700px;
+
+  .slider-close {
+    position: absolute;
+    top: -100px;
+    right: 50px;
+    width: 60px;
+    height: 60px;
+    z-index: 10;
+    cursor: pointer;
+
+    .line {
+      position: absolute;
+      top: 0;
+      right: 50%;
+      left: 50%;
+      width: 6px;
+      height: 50px;
+      background-color: #cfcf6c;
+    }
+
+    .line-1 {
+      transform: rotate(45deg);
+    }
+
+    .line-2 {
+      transform: rotate(-45deg);
+    }
+  }
+
+  .slider-close:hover .line,
+  .slider-close:active .line {
+    background: #3c2885;
+  }
+}

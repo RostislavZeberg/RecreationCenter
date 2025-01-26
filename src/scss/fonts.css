@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Bergamasco";
+  src: local("Bergamasco Light"), local("Bergamasco-Light"), local("BergamascoLightd"), url("../assest/fonts/Bergamasco-Light.ttf") format("ttf"), url("../assest/fonts/Bergamasco-Light.woff") format("woff"), url("../assest/fonts/Bergamasco-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bergamasco";
+  src: local("Bergamasco Regular"), local("Bergamasco-Regular"), local("BergamascoRegulard"), url("../assest/fonts/Bergamasco-Regular.ttf") format("ttf"), url("../assest/fonts/Bergamasco-Regular.woff") format("woff"), url("../assest/fonts/Bergamasco-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bergamasco";
+  src: local("Bergamasco Bold"), local("Bergamasco-Bold"), local("BergamascoBoldd"), url("../assest/fonts/Bergamasco-Bold.ttf") format("ttf"), url("../assest/fonts/Bergamasco-Bold.woff") format("woff"), url("../assest/fonts/Bergamasco-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Kodchasan";
+  src: local("Kodchasan Bold"), local("Kodchasan-Bold"), local("KodchasanBold"), url("../assest/fonts/Kodchasan-Bold.ttf") format("ttf"), url("../assest/fonts/Kodchasan-Bold.woff") format("woff"), url("../assest/fonts/Kodchasan-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Kodchasan";
+  src: local("Kodchasan-SemiBold"), local("Kodchasan-SemiBold"), local("KodchasanSemiBold"), url("../assest/fonts/Kodchasan-SemiBold.ttf") format("ttf"), url("../assest/fonts/Kodchasan-SemiBold.woff") format("woff"), url("../assest/fonts/Kodchasan-SemiBold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}/*# sourceMappingURL=fonts.css.map */

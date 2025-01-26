@@ -1,0 +1,65 @@
+.cottages {
+  &__container {
+    position: relative;
+  }
+
+  &__section {
+    margin-bottom: var(--mb-main);
+  }
+
+  &__list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+
+    .item {
+      position: relative;
+      width: 46%;
+      border-radius: 20px;
+
+      &__img {
+        margin-bottom: 20px;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+      }
+
+      &__content {
+        padding: 0 40px 40px 40px;
+      }
+
+      &__desc {
+        font-size: var(--font-size-p);
+      }
+
+      &__desc::first-letter {
+        font-size: 130%;
+        font-weight: 600;
+      }
+
+      &__desc:not(:last-child) {
+        margin-bottom: 10px;
+      }
+
+      &__price {
+        display: block;
+        text-align: center;
+      }
+
+      &__sum {
+        font-size: var(--font-size-p-title);
+        font-weight: 600;
+      }
+
+      &__btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+

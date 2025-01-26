@@ -1,0 +1,291 @@
+.background {
+  position: relative;
+}
+
+.background::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../assest/img/ball-triangle.svg) center/80px no-repeat;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 5;
+}
+
+.background._sending::after {
+  opacity: 1;
+  z-index: 5;
+  visibility: visible;
+}
+
+.contacts {
+  margin-bottom: var(--mb-main);
+}
+.contacts__container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.contacts__title {
+  margin-left: 50px;
+}
+.contacts__desc {
+  padding: 30px 50px 50px;
+  margin-bottom: 20px;
+}
+.contacts .pd {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.contacts__content {
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contacts__content .item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contacts__content .item__title {
+  padding-right: 50px;
+  font-family: Bergamasco;
+  font-size: 29px;
+  font-weight: 600;
+}
+.contacts__content .item__desc {
+  display: block;
+  max-width: 540px;
+}
+.contacts__content .item__tel {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.contacts__content .item__link {
+  color: #322473;
+  transition: color 0.3s ease-in-out;
+}
+.contacts__content .item__link:hover, .contacts__content .item__link:focus, .contacts__content .item__link:active {
+  color: #fff;
+  transition: color 0.3s ease-in-out;
+}
+.contacts__content .item:not(:last-child) {
+  margin-bottom: 30px;
+}
+.contacts__content .btn {
+  margin: 0;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.contacts__content .uk-button {
+  margin-left: 50px;
+}
+.contacts__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.contacts .form .form__inputs {
+  position: relative;
+}
+.contacts .form .form__inputs .form__input {
+  display: block;
+  width: 100%;
+  height: 90px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 19px;
+  color: #000;
+}
+.contacts .form .form__inputs .form__input._error {
+  box-shadow: 1px 1px 7px 6px red;
+}
+.contacts .form .form__inputs .input-i {
+  position: absolute;
+  left: 21px;
+  top: 30px;
+  z-index: 1;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 19px;
+  color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.contacts .form .form__inputs .input-i i {
+  color: #d61a1a;
+}
+.contacts .form .form__inputs .new__input--active {
+  top: 8px;
+  left: 40px;
+  font-size: 14px;
+  line-height: 14px;
+}
+.contacts .form .form__inputs .js-validate-error-label {
+  position: absolute;
+  top: -30px;
+  left: 0;
+}
+.contacts .form .form__inputs .form__input.js-validate-error-field {
+  color: #000 !important;
+}
+.contacts .form__desc {
+  margin-bottom: 30px;
+}
+.contacts .form .input {
+  flex-direction: column;
+}
+.contacts .form .input input {
+  padding: 15px;
+  margin-bottom: 30px;
+}
+.contacts .form .input textarea {
+  padding: 35px 15px 20px;
+  min-height: 200px;
+  resize: vertical;
+}
+.contacts .form .input textarea,
+.contacts .form .input input {
+  outline: none;
+  border-radius: 50px;
+  border: 1px solid #71a7e2;
+  background-color: rgba(113, 167, 226, 0.2);
+}
+.contacts .form .input textarea:hover,
+.contacts .form .input input:hover,
+.contacts .form .input textarea:focus,
+.contacts .form .input input:focus,
+.contacts .form .input textarea:active,
+.contacts .form .input input:active {
+  border-color: #fff;
+}
+.contacts .form .sending {
+  flex-direction: column;
+  padding-left: 50px;
+}
+.contacts .form .sending__box {
+  margin-bottom: 15px;
+}
+.contacts .form .sending .btn {
+  margin-right: 10px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.contacts .form .sending__box._error .sending__label::before {
+  box-shadow: 1px 1px 7px 6px red;
+}
+.contacts .form .sending__input {
+  display: none;
+}
+.contacts .form .sending__input:checked + .sending__label::after {
+  transform: scale(1);
+}
+.contacts .form .sending__label {
+  position: relative;
+  margin-bottom: 0;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+}
+.contacts .form .sending__label::before {
+  content: "";
+  align-self: flex-start;
+  margin-right: 10px;
+  flex: 0 0 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.contacts .form .sending__label::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 22px;
+  height: 22px;
+  background-color: green;
+  border-radius: 4px;
+  transform: scale(0);
+  transition: transform 0.3s ease-in-out;
+}
+.contacts .form .sending__desc, .contacts .form .sending__link {
+  font-size: 20px;
+}
+.contacts .form .sending__desc i, .contacts .form .sending__link i {
+  color: red;
+}
+.contacts .contacts-modal {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  align-items: center;
+  justify-content: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 25px;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s ease-in-out;
+}
+.contacts .contacts-modal__title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 55px;
+}
+.contacts .contacts-modal__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  z-index: 10;
+  cursor: pointer;
+}
+.contacts .contacts-modal__close .line {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  left: 50%;
+  width: 6px;
+  height: 50px;
+  background-color: #cfcf6c;
+}
+.contacts .contacts-modal__close .line-1 {
+  transform: rotate(45deg);
+}
+.contacts .contacts-modal__close .line-2 {
+  transform: rotate(-45deg);
+}
+.contacts .contacts-modal__close:focus .line, .contacts .contacts-modal__close:hover .line, .contacts .contacts-modal__close:active .line {
+  background-color: #3c2885;
+}
+.contacts .sent {
+  padding: 100px 30px;
+  max-width: 570px;
+  height: 300px;
+}
+.contacts .error {
+  padding: 80px 30px;
+  max-width: 745px;
+  background-color: #f65353;
+}
+.contacts .sent--active,
+.contacts .error--active {
+  opacity: 1;
+  z-index: 5;
+  transition: opacity 0.3s ease-in-out;
+}/*# sourceMappingURL=contacts.css.map */
